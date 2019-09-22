@@ -1,9 +1,12 @@
-# docker-cloudflare-update-dns
-docker image for update cloudflare dns record
+# CLOUDFLARE UPDATE DNS
 
-# environment
+## Intro
 
-## required
+This is a docker image for update cloudflare dns records
+
+## Environment
+
+### Required
 
 * CFKEY="a34a6b6fbc5188acddf94ae93871371f27e9cf"
 	* cloudflare API key
@@ -16,7 +19,7 @@ docker image for update cloudflare dns record
 
 > The Cloudflare `Global API Key` needs to be used and not the `Origin CA Key`
 
-## optional
+### Optional
 
 * CFINTERVAL=300
 	* interval for updating in seconds, default: 300 seconds
