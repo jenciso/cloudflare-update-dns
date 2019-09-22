@@ -23,3 +23,16 @@ This is a docker image for update cloudflare dns records
 
 * CFINTERVAL=300
 	* interval for updating in seconds, default: 300 seconds
+
+## Examples
+
+```console
+docker run -d \
+  -e CFKEY=89d0703637ce648749520ff3bc245b8ee2c1a \
+  -e CFUSER=juan.enciso@gmail.com \
+  -e CFZONE=enciso.site \
+  -e CFHOST=ansible-az.enciso.site \
+  --restart=always \
+  --name=cloudflare-update-dns \
+  jenciso/cloudflare-update-dns 
+```
