@@ -1,0 +1,13 @@
+version: '3.1'
+
+services:
+
+  cloudflare-update-dns:
+    container_name: cloudflare-update-dns
+    image: jenciso/cloudflare-update-dns:latest
+    environment:
+      - CFKEY=XXXXXXXXXXXXXXX
+      - CFUSER=juan.enciso@gmail.com
+      - CFZONE=docs-planet.site
+      - CFHOST=demo.docs-planet.site
+    restart: always
